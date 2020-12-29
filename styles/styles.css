@@ -194,6 +194,31 @@ nav a {
 .contact-links li {
   display: flex;
 }
+.email {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.smartphone {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact-links a {
+  display: flex;
+}
+
+nav a:hover,
+nav a:focus,
+nav a.active,
+.contact-links a:hover,
+.contact-links a:focus {
+  color: var(--accent-color);
+}
 
 .header-nav li:not(:last-child) {
   margin-right: 50px;
@@ -270,39 +295,17 @@ nav a.active,
 }
 
 /* quality */
-
-
-.list-items::before {
-  display: block;
-  content:'';
-  height: 120px;
-  outline: 1px solid transparent;
-  
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--secondary-background);
-} 
-
-
-.icon-sputnik::before {
-  background-image: url(../images/icons/sputnik.svg) ;
-}
-
-.icon-clock::before {
-  background-image: url(../images/icons/clock.svg) ;
-}
-
-.icon-diagram::before {
-  background-image: url(../images/icons/diagram.svg) ;
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/icons/astronaut.svg) ;
-}
-
 .quality {
   padding-top: 94px;
   padding-bottom: 47px;
+}
+.quality h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .quality ul {
@@ -313,6 +316,23 @@ nav a.active,
 }
 .quality li:not(:last-child) {
   margin-right: 30px;
+}
+
+.quality-container {
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-background);
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality-images {
+  width: 70px;
+  height: 70px;
 }
 
 /* what-we-do */
